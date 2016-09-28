@@ -1,0 +1,25 @@
+doctype html
+html(lang='es')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+        if env == 'production'
+            link(type='text/css', rel='stylesheet', href='css/styles.css')
+        else
+            each val in css
+                link(type='text/css', rel='stylesheet', href='css/#{val.split("/").slice(-1).join("")}')
+            link(type='text/css', rel='stylesheet', href='css/main.css')
+
+    body
+
+        div(role='main')
+            block pageContent
+
+        if env == 'production'
+            script(src='js/app.min.js')
+        else
+            each val in js
+                script(src='#{val.split("/").slice(1).join("/")}')
+            script(src='js/main.js')
+

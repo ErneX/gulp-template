@@ -1,0 +1,36 @@
+{
+  "name": "gulp-template",
+  "version": "0.0.0",
+  "description": "Sample gulp template with jade/stylus",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-concat": "^2.5.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-if": "^2.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-jshint": "^1.10.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.0.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.7",
+    "merge-stream": "^1.0.0",
+    "minimist": "^1.2.0",
+    "vinyl-paths": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ernesto G. A.",
+  "license": "LicenseRef-LICENSE",
+  "homepage": "",
+  "private": true
+}
